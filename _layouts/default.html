@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+    {% if page.title %}
+    {{ page.title }}
+  {% else %}
+    Ronzoni e Salsi
+  {% endif %}
+</title>
+<script src="/js/modernizr/modernizr.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="/swiper/css/swiper.min.css">
+<!--Animate CSS-->
+<link rel="stylesheet" href="/stylesheets/animate.css">
+
+<!-- Main CSS-->
+<link rel="stylesheet" href="/stylesheets/app.css" />
+
+
+</head>
+<body>
+
+<div class="container">
+
+<!--top bar-->
+<div class="fixed">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+  <li class="name">
+      <h1><a href="#">Ronzoni e Salsi</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+    <ul class="right">
+      <li class="active"><a href="/">Home</a></li>
+      <li class=""><a href="/chisiamo/">Chi Siamo</a></li>
+      <li class="has-dropdown"><a href="/servizi/">Servizi</a>
+        <ul class="dropdown">
+          <li><a href="/servizi/impianti/">Impianti elettrici</a></li>
+          <li><a href="/servizi/fotovoltaico/">Fotovoltaico</a></li>
+          <li><a href="/servizi/solareclipse/">Solar Eclipse</a></li>
+          <li><a href="/servizi/fibra/">Fibra Ottica</a></li>
+          <li><a href="/servizi/reti/">Reti</a></li>
+          <li><a href="/servizi/telefonia/">Telefonia</a></li>
+            <li><a href="/servizi/sicurezza/">Sicurezza</a></li>
+        </ul>
+        </li>
+        <li class=""><a href="/contatti/">Contatti</a></li>
+    </ul>
+
+  </section>
+</nav>
+</div> <!--end top bar-->
+
+<main>
+{{ content }}
+
+<footer class="ss-style-diagonaldown">
+  <p>
+    <i class="fa fa-copyright"></i>2016 <span>-</span> Ronzoni e Salsi s.n.c. <span>-</span> Via U. Boccioni 6 <span>-</span> 42124 <span>-</span> Reggio Emilia
+      <span>-</span><a href="mailto:info@ronzoniesalsi.it" target="_top">info@ronzoniesalsi.ti</a> <span>-</span>
+        Tel: 0522271475 <span>-</span> Fax: 0522514498
+  </p>
+    <p>
+        Partita IVA: <span>-</span> Iscritta al registro delle imprese: <span>-</span> Capitale Sociale: Interamente versato
+    </p>
+</footer>
+
+
+</main> <!--end-main-->
+
+</div> <!--end container-->
+
+<script src="/js/jquery/dist/jquery.min.js"></script>
+<script src="/js/foundation/js/foundation.min.js"></script>
+<script src="/js/app.js"></script>
+<!-- Swiper JS -->
+<script src="/swiper/js/swiper.min.js"></script>
+<!--Viewportchecker-->
+<script src="/js/viewportchecker.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: 4500,
+    autoplayDisableOnInteraction: false,
+    mousewheelControl: true,
+    mousewheelForceToAxis: true,
+    loop: true
+});
+
+jQuery(document).ready(function() {
+    jQuery('.servizio').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
+       });
+});
+</script>
+
+</body>
+</html>
+

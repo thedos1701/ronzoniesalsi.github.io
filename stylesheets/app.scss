@@ -1,0 +1,350 @@
+---
+---
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+html,
+body {
+    height: 100%;
+}
+
+p, ul {
+    font-size: rem-calc(18);
+}
+
+main {
+    height: 100%;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+span.underline {
+    border-bottom: 2px solid $rs-red;
+}
+a.underline {
+    text-decoration: underline;
+}
+/*********************************/
+/*swiper*/
+.landing-slider {
+    width: 100%;
+    height: 60vh;
+}
+.landing-slide {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: $white;
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box; display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+        -webkit-align-self: flex-end; /* Safari 7.0+ */
+        align-self: flex-end;
+    }
+    
+}
+
+.slide-logo {
+    width: 200px;
+    height: 188px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -94px;
+    margin-left: -100px;
+    z-index: 1;
+    background-image: url(../img/be-logo.png);
+    -moz-background-size: 200px 188px;
+    -webkit-background-size: 200px 188px;
+    background-size: 200px 188px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media #{$small-only} {
+    .slide-logo {
+        width: 100px;
+        height: 94px;
+        top: 50%;
+        left: 50%;
+        margin-top: -47px;
+        margin-left: -50px;
+        background-image: url(../img/be-logo-small.png);
+        -moz-background-size: 100px 94px;
+        -webkit-background-size: 100px 94px;
+        background-size: 100px 94px;
+    }
+}
+
+.slide-logo-alt {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    z-index: 1;
+    background-image: url(../img/rs-logo-150.png);
+    -moz-background-size: 150px 150px;
+    -webkit-background-size: 150px 150px;
+    background-size: 150px 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#slide-1 {
+  background-image: url(../img/fibra.jpg);
+}
+#slide-2 {
+  background-image: url(../img/impianti.jpg);
+}
+#slide-3 {
+  background-image: url(../img/fotovoltaico.jpg);
+}
+/*********************************/
+
+
+section.content {
+    width: 100%;
+    background-color: $white;
+    color: $be-gray;
+    margin: 0;
+    padding-bottom: 4em;
+
+    h1, h2 {
+        color: $be-gray;
+    }
+}
+
+div.icona-servizi {
+    margin-bottom: 1.5em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+}
+
+#beweb-logo {
+    margin: 0 auto;
+    padding: 3em 3em 2em 3em;
+}
+
+section.slogan {
+    margin: 0;
+    padding: 0 0 3em 0;
+    width: 100%;
+    background-color: #f7f7f7;
+
+    h2 {
+        font-size: rem-calc(28);
+        color: $be-gray;
+    }
+    h4 {
+        font-size: rem-calc(22);
+        color: $be-gray;
+        margin: 1em 0 1em 0;
+        padding: 0;
+    }
+    p {
+        font-size: rem-calc(20);
+        color: $be-gray;
+    }
+}
+
+footer {
+    padding: 0 0 1em 1.5em;
+    p {
+        color: $white;
+        font-size: rem-calc(16);
+    }
+    a {
+        color: $white;
+        font-size: rem-calc(16);
+        text-decoration: underline;
+    }
+    span { 
+        margin: 0 0.5em 0 0.5em;
+    }
+}
+
+.catch {
+    margin-bottom: 3em;
+}
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+/* Double Diagonal line */
+
+.container {
+    overflow: hidden;
+}
+.ss-style-doublediagonal {
+    position: relative;
+    z-index: 1;
+    padding-top: 1em;
+}
+
+.ss-style-doublediagonal::before {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 50%;
+    background: inherit;
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+footer::before,
+footer::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+.ss-style-diagonaldown {
+    position: relative;
+    z-index: 1;
+    padding-top: 1em;
+}
+
+.ss-style-diagonaldown::before {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 150%;
+    background: $be-gray;
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+/*********************************/
+/*header*/
+header {
+    padding-bottom: 6em;
+    text-align: center;
+    background: url(/img/reggioAV.jpg) no-repeat center center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    h1 {
+        color: $white;
+        text-transform: uppercase;
+    }
+}
+
+@media #{$large-up} {
+    header {
+        background: url(/img/reggioAV.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+/*********************************/
+/*pacchetti*/
+.pacchetti-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pacchetto {
+    background-color: #eee;
+    width: 200px;
+    padding: 0.5em;
+
+}
+@media #{$medium-up} {
+    .pacchetto {
+        width: 300px;
+        height: 400px;
+    }
+}
+/*********************************/
+/*section contatti*/
+section.contatti {
+    padding-top: 3em;
+    form { 
+        padding: 2em 0 2em 0;
+        textarea {
+            min-height: 10em;
+        }
+    }
+}

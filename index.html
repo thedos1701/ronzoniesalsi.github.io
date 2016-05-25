@@ -1,92 +1,151 @@
-<!doctype html>
-<html>
-<head>	
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Ronzoni e Salsi">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Exo|Exo+2|Orbitron' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+---
+layout: default
+title: Ronzoni e Salsi - Impianti elettrici e trasmissione dati
+---
+<main>
 
-	<title>Ronzoni e Salsi</title>
-</head>
 
-<body>
+<!-- Swiper -->
+<div class="swiper-container landing-slider">
+    <div class="swiper-wrapper">
+        <div id="slide-1" class="swiper-slide landing-slide">
+        </div>
+        <div id="slide-2" class="swiper-slide landing-slide">
+        </div>
+        <div id="slide-3" class="swiper-slide landing-slide">
+        </div>
+    </div>
 
-<div class="countdown countdown-container container">
-     <h2>ronzoniesalsi.it</h2>
-    <div class="clock row">
-        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
-            <div class="wrap">
-                <div class="inner">
-                    <div id="canvas-days" class="clock-canvas"></div>
-
-                    <div class="text">
-                        <p class="val">0</p>
-                        <p class="type-days type-time">DAYS</p>
-                    </div><!-- /.text -->
-                </div><!-- /.inner -->
-            </div><!-- /.wrap -->
-        </div><!-- /.clock-item -->
-
-        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
-            <div class="wrap">
-                <div class="inner">
-                    <div id="canvas-hours" class="clock-canvas"></div>
-
-                    <div class="text">
-                        <p class="val">0</p>
-                        <p class="type-hours type-time">HOURS</p>
-                    </div><!-- /.text -->
-                </div><!-- /.inner -->
-            </div><!-- /.wrap -->
-        </div><!-- /.clock-item -->
-
-        <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
-            <div class="wrap">
-                <div class="inner">
-                    <div id="canvas-minutes" class="clock-canvas"></div>
-
-                    <div class="text">
-                        <p class="val">0</p>
-                        <p class="type-minutes type-time">MINUTES</p>
-                    </div><!-- /.text -->
-                </div><!-- /.inner -->
-            </div><!-- /.wrap -->
-        </div><!-- /.clock-item -->
-
-        <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
-            <div class="wrap">
-                <div class="inner">
-                    <div id="canvas-seconds" class="clock-canvas"></div>
-
-                    <div class="text">
-                        <p class="val">0</p>
-                        <p class="type-seconds type-time">SECONDS</p>
-                    </div><!-- /.text -->
-                </div><!-- /.inner -->
-            </div><!-- /.wrap -->
-        </div><!-- /.clock-item -->
-    </div><!-- /.clock -->
-    <h3>Brace yourselves, Wint...ehm...we're coming...</h3>
-</div><!-- /.countdown-wrapper -->
+    <!-- Add be logo -->
+    <div class="slide-logo-alt"></div>
+    
+</div> <!--end swiper container-->
 
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/kinetic.js"></script>
-<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
-<script type="text/javascript">
-    var datetime = new Date();
-    var start = datetime.getTime()/1000;
-	$('.countdown').final_countdown({
-        'start': start,
-        'end': 1464712320,
-        'now':  start   
-    });
-</script>
+<section class="content ss-style-doublediagonal">
 
-</body>
-</html>
+<div class="row catch">
+  <div class="small-12 columns text-center">
+    <h4>
+    Il lavoro è la nostra passione, il nostro mestiere.
+    </h4>
+    <p>
+    Da oltre 30 anni una garanzia di professionalità a Reggio Emilia. Progettiamo e realizziamo impianti elettrici civili e industriali,
+        impianti fotovoltaici, reti di trasmissione dati in rame, fibra ottica e molto altro ancora.
+    </p>
+    <p>
+      <a href="/servizi/" class="underline">
+      Scopri come possiamo aiutarti
+      <i class="fa fa-angle-right"></i>
+      </a>
+    </p>
+  </div>
+</div>
+
+
+<div class="row">
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Impianti elettrici</span></h2>
+  </div>
+  <p>
+    Progettiamo e realizziamo impianti elettrici sia civili che industriali.<br />
+      Dal piccolo appartamento alla grande azienda, impianti in bassa e media tensione.<br />
+      Quadri elettrici industriali e cabine di trasformazione.
+  </p>
+  </div> <!--end column-->
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Impianti fotovoltaici</span></h2>
+  </div>
+  <p>
+    Impianti fotovoltaici sia indipendenti che connessi alla rete di distribuzione nazionale, realizzati a regola d'arte per offrirti la massima efficienza possibile. <br />
+    Energia pulita e risparmio reale sulla bolletta elettrica.
+  </p>
+  </div> <!--end column-->
+
+</div> <!--end row-->
+
+
+<div class="row">
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Trasmissione dati</span></h2>
+  </div>
+  <p>
+  Le esigenze si connettività sono ormai irrinunciabili per qualsiasi azienda moderna. <br />
+      Realizziamo reti di trasmissione dati sia in rame che fibra ottica, occupandoci di tutto, dalla posa dei cavi all'installazione e configurazione degli apparti attivi quali switch, routers e Access point WiFi. <br />
+      
+   </p>
+  </div> <!--end column-->
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Fibra Ottica</span></h2>
+  </div>
+  <p>
+   Supera i limiti delle connessioni in rame grazie alla fibra ottica. <br />
+   Realizziamo impianti in fibra mono e multimodale, completi di certificaione di conformità e prestazioni. <br />
+  </p>
+  </div> <!--end column-->
+
+</div> <!--end row-->
+
+
+<div class="row show-for-medium-up">
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Domotica</span></h2>
+  </div>
+  <p>
+    Rendi la tua casa o la tua azienda intelligente grazie ai nostri impianti domotici.<br />
+    Controlla tutta la tua casa tramite smarptphone e tablet, rendila autonoma nella gestione delle attività quitidiane e controlla i consumi.
+  </p>
+  </div> <!--end column-->
+
+  <div class="small-12 medium-6 columns servizio">
+  <div class="text-center">
+    <h2 class="uppercase servizio-title"><span class="underline">Anti intrusione</span></h2>
+  </div>
+  <p>
+    Proteggi la tua casa e la tua azienda con i nostri sistemi d'allarme e anti-intrusione. Realizzati in collaborazione con partner leader di mercato. Impianti da intero ed esterno, integrabili con sistemi di videosorveglianza..
+  </p>
+  </div> <!--end column-->
+
+</div> <!--end row-->
+
+
+
+</section> <!--end content-->
+
+
+<section class="slogan ss-style-doublediagonal">
+    <div class="row text-center mission">
+      <div class="small-12 medium-12 small-centered columns">
+          <h2 class="uppercase">Chi siamo</h2>
+          <p>
+            Siamo un'azienda che si propone di unire la solidità
+            e la professionalità di progetti studiati nei minimi dettagli
+            alla freschezza e dinamicità creativa per offrirvi soluzioni
+            e servizi sempre all'avanguardia.
+          </p>
+
+          <h4 class="uppercase">Mettiamo il cliente al centro</h4>
+
+          <p>Indaghiamo i bisogni del cliente, capiamo le sue esigenze e realizziamo gli impianti richiesti con serietà, professionalità e a regola d'arte.
+          </p>
+          <p>
+            <a href="/chisiamo/" class="underline">
+            Chi siamo  
+            <i class="fa fa-angle-right"></i>
+            </a>
+          </p>
+      </div>
+    </div>
+</section>
+
