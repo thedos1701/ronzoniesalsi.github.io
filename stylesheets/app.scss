@@ -297,7 +297,7 @@ footer::after {
 header {
     padding-bottom: 6em;
     text-align: center;
-    background: url(/img/reggioAV.jpg) no-repeat center center scroll; 
+    background: url(/img/ImpiantiIndustrialiBn.jpg) no-repeat center center scroll; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -307,11 +307,12 @@ header {
         color: $white;
         text-transform: uppercase;
     }
+
 }
 
 @media #{$large-up} {
     header {
-        background: url(/img/reggioAV.jpg) no-repeat center center fixed; 
+        background: url(/img/ImpiantiIndustrialiBn.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
