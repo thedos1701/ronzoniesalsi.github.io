@@ -19,5 +19,6 @@ markdown: kramdown
 
 gems:
     - jekyll-sitemap
+    - html-proofer
 
 exclude: ["test"]
