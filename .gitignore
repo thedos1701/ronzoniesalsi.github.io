@@ -1,6 +1,4 @@
 _site/
-site/
 .sass-cache/
 .jekyll-metadata
 *.DS_Store
-docker_prod/site/

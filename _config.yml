@@ -19,6 +19,4 @@ markdown: kramdown
 
 gems:
     - jekyll-sitemap
-    - html-proofer
 
-exclude: ["Dockerfile", "docker_prod", "site"]
